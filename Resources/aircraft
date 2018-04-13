@@ -1,0 +1,14 @@
+abbreviated name,full name,speed,passengers,galons per hour,fuel type,fuel capacity (galons),price;
+C172,Cessna 172,140,3,8,Aviation Gas,42,$274900;
+Baron,Beechcraft Baron,220,5,32,Aviation Gas,136,$1380000;
+KingAir,Beechcraft King Air,0,0,0,0,0,0;
+DHC6,DHC-6 Twin Otter,0,0,0,0,0,0;
+Citation,Cessna Citation,0,0,0,0,0,0;
+G650,Gulfstream G650,0,0,0,0,0,0;
+MD80,MD-80,0,0,0,0,0,0;
+B737,737,0,0,0,0,0,0;
+B757,757,0,0,0,0,0,0;
+B747,747,0,0,0,0,0,0;
+B767,767,0,0,0,0,0,0;
+B777,777,0,0,0,0,0,0;
+B787,787,0,0,0,0,0,0;
