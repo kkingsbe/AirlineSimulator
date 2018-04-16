@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 
 import java.io.BufferedReader;
@@ -16,6 +17,7 @@ public class Controller {
     public String allAircraftData;
     public int lines;
     public static String newline = System.getProperty("line.separator");
+    public ComboBox aircraftSelector;
 
     public void initialize(){
 
@@ -62,19 +64,25 @@ public class Controller {
 
         }
 
-        updateLabel(aircraft);
+        updateAircraftSelector(aircraft);
 
     }
 
-    private void updateLabel(String[][] aircraft) {
+    private void updateAircraftSelector(String[][] aircraft) {
         String labelText = null;
-        for (int plane = 1;plane<lines;plane++){
-            for (int attribute = 0; attribute < aircraft.length;attribute++){
-                labelText = labelText + aircraft[plane][attribute];
+        for (int plane = 1;plane<lines - 1;plane++){
+            System.out.println(plane);
+            try {
+                aircraftSelector.getItems().addAll(aircraft[plane][1]);
+            } catch (java.lang.ArrayIndexOutOfBoundsException e) {}
+
+            for (int attribute = 1; attribute < aircraft.length;attribute++){
+                try {
+                    labelText = labelText + aircraft[plane][attribute];
+                } catch (java.lang.ArrayIndexOutOfBoundsException ignored){}
             }
+            labelText += "\n";
         }
         labelText = labelText.replace("null","").replace("[","").replace("]","\n");
-
-        aircraftSpecsLabel.setText(labelText);
     }
 }
