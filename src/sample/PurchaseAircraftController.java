@@ -47,7 +47,6 @@ public class PurchaseAircraftController {
             Template = reader.readLine();
             lineLen = Template.split(",").length;
             System.out.println("Template file has " + lineLen + " fields");
-            aircraft = new String[lineLen][lines];
             allAircraftData = Files.readAllLines(Paths.get("Resources/aircraft")).toString();
 
         } catch (IOException e) {
@@ -56,7 +55,7 @@ public class PurchaseAircraftController {
 
         lines = allAircraftData.split(";").length;
 
-        aircraft = new String[lineLen][lines];
+        aircraft = new String[lines][lines];
 
         for (int line = 1; line < lines; line++){
             String currentLine = null;
