@@ -45,7 +45,7 @@
                      <effect>
                         <DropShadow />
                      </effect></ImageView>
-                  <Label fx:id="planeDescription" alignment="TOP_LEFT" layoutX="9.0" layoutY="284.0" prefHeight="439.0" prefWidth="817.0">
+                  <Label fx:id="planeDescription" alignment="TOP_LEFT" layoutX="9.0" layoutY="284.0" prefHeight="439.0" prefWidth="817.0" wrapText="true">
                      <font>
                         <Font size="20.0" />
                      </font>

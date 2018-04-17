@@ -102,7 +102,7 @@ public class Controller {
     }
 
     private void updateAircraftData(String[] aircraft) {
-        String labelText = "The " + aircraft[1] + " has a cruising speed of " + aircraft[2] + " MPH. It can carry " + aircraft[3] + " passangers";
+        String labelText = "The " + aircraft[1] + " costs " + aircraft[7] + " and has a cruising speed of " + aircraft[2] + " MPH while carrying " + aircraft[3] + " passangers. It consumes " + aircraft[5] + " at a rate of " + aircraft[4] + " galons per hour with a capacity of " + aircraft[6] + " galons.";
 
         /*
         for (int attribute = 1; attribute < aircraft.length;attribute++){
