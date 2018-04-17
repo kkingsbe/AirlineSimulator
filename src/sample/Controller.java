@@ -70,7 +70,7 @@ public class Controller {
             } catch (java.lang.ArrayIndexOutOfBoundsException e){}
 
         }
-
+        populateComboBox(aircraft);
     }
 
     public void infoUpdate(ActionEvent actionEvent) {
@@ -90,20 +90,28 @@ public class Controller {
         return planeIndex;
     }
 
-    private void updateAircraftData(String[] aircraft) {
-        String labelText = null;
+    public void populateComboBox(String [][] aircraft){
         try {
             System.out.println("combo");
-            aircraftSelector.getItems().addAll(aircraft[1]);
-        } catch (java.lang.ArrayIndexOutOfBoundsException e) {}
+            for(int row = 0; row < lines; row++)
+            {
+                aircraftSelector.getItems().addAll(aircraft[row][1]);
+            }
 
+        } catch (java.lang.ArrayIndexOutOfBoundsException e) {}
+    }
+
+    private void updateAircraftData(String[] aircraft) {
+        String labelText = "The " + aircraft[1] + " has a cruising speed of " + aircraft[2] + " MPH. It can carry " + aircraft[3] + " passangers";
+
+        /*
         for (int attribute = 1; attribute < aircraft.length;attribute++){
             try {
                 labelText = labelText + aircraft[attribute];
             } catch (java.lang.ArrayIndexOutOfBoundsException ignored){}
         }
         labelText += "\n";
-
+        */
         planeDescription.setText(labelText);
 
     }
