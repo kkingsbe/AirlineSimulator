@@ -1,6 +1,10 @@
 package sample;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -15,7 +19,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 
-public class Controller {
+public class PurchaseAircraftController {
     public Label aircraftSpecsLabel;
     public String Template;
     public int lineLen;
@@ -26,6 +30,8 @@ public class Controller {
     public ImageView aircraftImage;
     public Label planeDescription;
     public String[][] aircraft;
+    public Button purchaseAircraftBtn;
+    public Label costLabel;
 
     public void initialize(){
 
@@ -77,6 +83,7 @@ public class Controller {
         updateImage(aircraftSelector.getValue().toString());
         int plane = planeLookUp(aircraftSelector.getValue().toString());
         updateAircraftData(aircraft[plane]);
+        costLabel.setText("Cost: " + aircraft[plane][7]);
     }
 
     private int planeLookUp(String planeString) {
@@ -126,5 +133,9 @@ public class Controller {
             e.printStackTrace();
         }
         aircraftImage.setImage(airplane);
+    }
+
+    public void purchaseAircraft(ActionEvent actionEvent) {
+
     }
 }

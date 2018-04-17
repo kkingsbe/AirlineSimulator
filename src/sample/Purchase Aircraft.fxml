@@ -12,7 +12,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PurchaseAircraftController">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -48,6 +48,12 @@
                   <Label fx:id="planeDescription" alignment="TOP_LEFT" layoutX="9.0" layoutY="284.0" prefHeight="439.0" prefWidth="817.0" wrapText="true">
                      <font>
                         <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="purchaseAircraftBtn" layoutX="373.0" layoutY="127.0" mnemonicParsing="false" onAction="#purchaseAircraft" text="Purchase Aircraft" />
+                  <Label fx:id="costLabel" layoutX="513.0" layoutY="93.0" text="Cost: ">
+                     <font>
+                        <Font size="15.0" />
                      </font>
                   </Label>
                </children>
