@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="739.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartScreenController">
+   <children>
+      <Label layoutX="42.0" layoutY="30.0" text="Welcome To Airline Simulator!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="144.0" />
+      <TextField fx:id="airlineNameInput" layoutX="54.0" layoutY="132.0" prefHeight="25.0" prefWidth="195.0" promptText="Airline Name" />
+      <Label layoutX="54.0" layoutY="109.0" text="Airline Name:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="homeAirportSelector" layoutX="56.0" layoutY="177.0" prefWidth="150.0" promptText="Home Airport" />
+      <Button fx:id="startGameBtn" layoutX="720.0" layoutY="663.0" mnemonicParsing="false" onAction="#startGame" prefHeight="48.0" prefWidth="103.0" text="Start Game!" />
+   </children>
+</Pane>

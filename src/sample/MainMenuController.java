@@ -5,11 +5,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class MainMenuController {
+
+    public Button buyVehicles;
+    public Button buyVehicles1;
 
     public void switchToBuyVehicles(ActionEvent actionEvent) throws IOException {
         Parent buyAircraftParent = FXMLLoader.load(getClass().getResource("Purchase Aircraft.fxml"));

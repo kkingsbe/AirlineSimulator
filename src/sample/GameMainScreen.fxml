@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="739.0" prefWidth="852.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="737.0" prefWidth="849.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4ffcd" height="739.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="852.0" />
+            <Separator layoutX="422.0" orientation="VERTICAL" prefHeight="739.0" prefWidth="7.0" />
+            <Label fx:id="yourAircraftLabel" alignment="TOP_LEFT" layoutX="429.0" layoutY="46.0" prefHeight="682.0" prefWidth="416.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="585.0" layoutY="14.0" text="Your Aircraft:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
